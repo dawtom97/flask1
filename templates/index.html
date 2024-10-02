@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To jest opis">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="data:image/png;base64,{{img_url}}" alt="">
+
+    <h1>Dzień dobry, {{firstname|upper}} {{lastname|lower}}</h1>
+    <p>witam witam</p>
+    <h3>{{test|default("domyślna")}}</h3>
+
+    {% if firstname == "John" %}
+        <h3>witaj John</h3>
+    {% else %}
+        <h3>odmowa dostępu</h3>
+    {% endif %}
+
+    <button>przycisk</button>
+    
+</body>
+</html>
